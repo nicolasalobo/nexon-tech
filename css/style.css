@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 80px; /* Adiciona espaço para o header fixo */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ff19c6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+}
+
+header h2 {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header .button-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header button {
+  background: gray;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-family: Arial, sans-serif;
+}
+
+header button:hover {
+  background: #333;
+}
